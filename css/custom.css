@@ -1,0 +1,23 @@
+nav svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  stroke: currentColor;
+  fill: none;
+}
+
+/* 1. 기본 설정: nav 안의 모든 테마 텍스트는 일단 숨김 */
+.show-light, .show-dark {
+  display: none;
+}
+
+/* 2. 라이트 모드(또는 기본값)일 때 Light만 표시 */
+:root:not([data-theme="dark"]) .show-light {
+  display: inline;
+}
+
+/* 3. 다크 모드일 때 Dark만 표시 */
+[data-theme="dark"] .show-dark {
+  display: inline;
+}

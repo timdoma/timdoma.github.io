@@ -1,0 +1,10 @@
+[
+  
+    {
+      "title": "블로그 시작하기",
+      "url": "/posts/{{ page.fileSlug}}/",
+      "date": "2026-02-24",
+      "tags": ["posts"]
+    }
+  
+]
