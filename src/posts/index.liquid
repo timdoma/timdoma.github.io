@@ -1,0 +1,37 @@
+---
+layout: layouts/base.liquid
+title: All posts 
+permalink: "/posts/index.html"
+eleventyExcludeFromCollections: true
+tags: []
+---
+
+<main>
+
+  {% for post in collections.posts reversed %}
+  <article>
+    <header>
+      <h2>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+      </h2>
+      <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+    </header>
+
+    <p>
+      {{ post.content | strip_html | truncate: 150 }}
+    </p>
+
+    {% if post.data.tags %}
+    <footer>
+      {% for tag in post.data.tags %}
+        {% if tag != "posts" %}
+          <small> #{{ tag }}</small>
+        {% endif %}
+      {% endfor %}
+    </footer>
+    {% endif %}
+  </article>
+  {% else %}
+  <p>작성된 글이 없습니다.</p>
+  {% endfor %}
+</main>

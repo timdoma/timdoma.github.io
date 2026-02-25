@@ -1,0 +1,31 @@
+{
+  "name": "timdoma.github.io",
+  "version": "1.0.0",
+  "description": "Simple and pragmetic portfolio and blog homepage",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
+    "test": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timdoma/timdoma.github.io.git"
+  },
+  "keywords": [],
+  "author": "Heonseong Park",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timdoma/timdoma.github.io/issues"
+  },
+  "homepage": "https://github.com/timdoma/timdoma.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  },
+  "dependencies": {
+    "rehype-stringify": "^10.0.1",
+    "unified": "^11.0.5",
+    "uniorg-parse": "^3.2.0",
+    "uniorg-rehype": "^2.2.0"
+  }
+}

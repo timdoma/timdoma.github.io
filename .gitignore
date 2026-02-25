@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Build output
+# GitHub Actions를 사용해 서버에서 빌드한다면 _site는 제외하는 것이 맞습니다.
+_site/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDEs and OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Eleventy cache
+# 빌드 속도를 위해 .cache를 포함하고 싶다면 이 줄을 주석 처리하세요.
+.cache/
