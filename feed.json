@@ -2,7 +2,7 @@
   
     {
       "title": "블로그 시작하기",
-      "url": "/posts/{{ page.fileSlug}}/",
+      "url": "/posts/my-first-post/",
       "date": "2026-02-24",
       "tags": ["posts"]
     }
