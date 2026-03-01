@@ -1,5 +1,3 @@
 {
-  "layout": "layouts/base.liquid",
-  "tags": ["posts"],
-    "permalink": "/posts/{{ page.fileSlug}}/"
+  "layout": "layouts/base.liquid"
 }
